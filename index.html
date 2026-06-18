@@ -39,6 +39,10 @@
                 <div class="section-header">
                     <h2>My Tasks</h2>
                     <button id="Create">+ Add Task</button>
+                    <button id="clearAllBtn">Clear All</button>
+                </div>
+                <div id="taskContainer">
+
                 </div>
                 <div class="form">
                     <div></div>
@@ -49,13 +53,60 @@
                     <form>
                         <h1>Create task</h1>
                         <input type="text" placeholder="Title"/>
-                        <input type="text" placeholder="Category"/>
+                        <select id="categoryInput">
+                          <option value="">Select category</option>
+                          <option value="Work">Work</option>
+                          <option value="Personal">Personal</option>
+                          <option value="Urgent">Urgent</option>
+                        </select>
                         <input type="text" placeholder="Description"/>
                         <button>Create</button>
                     </form>
                 </div>
             </div>
         </section>
+        <section class="propagation-section">
+           <h2>Event Propagation Demo</h2>
+           <p>Open your console, then click the button below.</p>
+
+           <div id="grandparent" class="propagation-box">
+               Grandparent
+              <div id="parent" class="propagation-box">
+                 Parent
+                 <button id="child">Child Button</button>
+              </div>
+          </div>
+       </section>
+       <section class="pipeline-section">
+         <h2>Browser Rendering Pipeline</h2>
+     
+         <div class="pipeline">
+             <div class="pipeline-box">HTML</div>
+             <span class="arrow">→</span>
+             <div class="pipeline-box">Parsing</div>
+             <span class="arrow">→</span>
+             <div class="pipeline-box">Tokenization</div>
+             <span class="arrow">→</span>
+             <div class="pipeline-box">DOM Tree</div>
+         </div>
+     
+         <div class="pipeline">
+             <div class="pipeline-box">CSS</div>
+             <span class="arrow">→</span>
+             <div class="pipeline-box">CSSOM Tree</div>
+         </div>
+     
+         <div class="pipeline">
+             <div class="pipeline-box">DOM Tree + CSSOM Tree</div>
+             <span class="arrow">→</span>
+             <div class="pipeline-box">Render Tree</div>
+         </div>
+     </section>
+     <section class="attr-demo-section">
+           <h2>Attribute vs Property Demo</h2>
+           <input type="text" id="attributeDemo" value="Original Value">
+           <button id="compareBtn">Compare in Console</button>
+       </section>
     </main>
 </body>
 </html>

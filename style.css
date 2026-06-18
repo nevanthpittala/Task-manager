@@ -56,13 +56,19 @@ html,body{
     justify-content:space-between;
     padding-top: 1rem;
 }
-#openTaskModal{
-    padding:0.8rem 1.2rem;
-    border:none;
-    border-radius:0.8rem;
-    background:#7c3aed;
-    color:white;
-    cursor:pointer;
+#Create{
+    padding: 5px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+#clearAllBtn{
+    padding: 5px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+#categoryInput{
+    padding: 0.5rem;
 }
 .form{
     height: 100%;
@@ -99,4 +105,85 @@ input{
     font-size: 20px;
     justify-content: space-between;
     cursor: pointer;
+}
+.done {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+.propagation-section{
+    padding: 0.5rem;
+}
+.propagation-box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 2px solid #7c3aed;
+    border-radius: 0.8rem;
+}
+
+#parent {
+    background-color: #85848d;
+}
+
+#child {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+}
+
+body[data-theme="dark"] {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body[data-theme="dark"] .header,
+body[data-theme="dark"] .stat-card,
+body[data-theme="dark"] .dashboard,
+body[data-theme="dark"] .task-card,
+body[data-theme="dark"] form,
+body[data-theme="dark"] .pipeline-section {
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+#themeBtn.active {
+    background-color: #e7e3d9;
+}
+
+.pipeline-section {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 1rem;
+}
+
+.pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.pipeline-box {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.8rem;
+    background: #ede9fe;
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #7c3aed;
+}
+form button{
+    padding: 0.5rem;
+}
+.dashboard {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.08);
 }
